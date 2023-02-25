@@ -1,6 +1,8 @@
 from flask import Flask, render_template #importing Flask and render template
 
 app=Flask(__name__,template_folder='htmlfiles') #creating a instance of flask or initiating flask and assigning the template folder
+
+
 @app.route("/") #specify the route
 
 def naruto():
