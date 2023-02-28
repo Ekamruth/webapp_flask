@@ -1,4 +1,10 @@
-Naruto=[1,2,3,4]
+#@app.route("/api/characters")
+#def char_description():
+ # characters=chars_info()
+  #return jsonify(characters)
 
-for i in Naruto:
-  print(i)
+
+name=input()
+s=("select * from naruto.characters where name='%s'" %name)
+print(s)
+print(type(s))

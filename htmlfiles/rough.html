@@ -1,0 +1,15 @@
+<style>
+  #char{ 
+    height: 300px;
+    width:100%;
+     
+  }
+  </style>
+
+  <div id="char" class="container row">
+        {% for character in characters %}
+            <div class="col">
+              <img src={{character['image']}}>
+            </div>
+        {% endfor %}
+  </div>

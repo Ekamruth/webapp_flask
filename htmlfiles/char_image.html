@@ -1,0 +1,16 @@
+
+<style>
+  #char{
+    width:100%;
+
+  }
+  
+</style>
+
+<div id="char" class="container row gap-3 " >
+    {% for character in characters %}
+      <div class="col img-fluid img-thumbnail">
+        <a href="/char_desc/{{character['name']}}"><img src={{character['image']}} height="400" ></a>
+      </div>
+    {% endfor %}
+</div>
