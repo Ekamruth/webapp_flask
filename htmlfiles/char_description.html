@@ -9,12 +9,17 @@
 </head>
 <body>
     {% include 'nav.html' %}
-    <div class="container mt-2">
-      <h5 class="mt-4 mb-1">Name:</h5>{{char_desc['name']}}
-      <h5 class="mt-4 mb-1">Clan name:</h5>{{char_desc['clan_name']}}
-      <h5 class="mt-4 mb-1">Description:</h5>{{char_desc['description']}}
-      <h5 class="mt-4 mb-1">Rank:</h5>{{char_desc['ninja_rank']}}
-      <h5 class="mt-4 mb-1">Famous jutsu:</h5>{{char_desc['famous_jutsu']}}
+    <div class="container row ml-4 mt-2">
+      <div class="ml-4 pl-4 col">
+        <img src={{char_desc['desc_image']}} height="750" width="550">
+      </div>
+      <div class="col">
+        <h5 class="mt-4 mb-1">Name:</h5>{{char_desc['name']}}
+        <h5 class="mt-4 mb-1">Clan name:</h5>{{char_desc['clan_name']}}
+        <h5 class="mt-4 mb-1">Description:</h5>{{char_desc['description']}}
+        <h5 class="mt-4 mb-1">Rank:</h5>{{char_desc['ninja_rank']}}
+        <h5 class="mt-4 mb-1">Famous jutsu:</h5>{{char_desc['famous_jutsu']}}
+      </div>
 
       
        

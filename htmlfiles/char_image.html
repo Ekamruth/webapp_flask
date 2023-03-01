@@ -7,10 +7,10 @@
   
 </style>
 
-<div id="char" class="container row gap-3 " >
+<div id="char" class="container row gap-4 " >
     {% for character in characters %}
-      <div class="col img-fluid img-thumbnail">
-        <a href="/char_desc/{{character['name']}}"><img src={{character['image']}} height="400" ></a>
+      <div class="col-sm img-fluid img-thumbnail">
+        <a href="/char_desc/{{character['name']}}"><img src={{character['image']}} height="400" width="220" ></a>
       </div>
     {% endfor %}
 </div>
