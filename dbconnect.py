@@ -2,7 +2,7 @@
 from sqlalchemy import create_engine, text      
 
 #dbcon_string contains the connection string to the database, including the necessary authentication credentials to connect to the database. 
-dbcon_string="mysql+pymysql://peb9zy44l6y7y03zobpd:pscale_pw_6aI0gwsjCau5piw5eHIyZRBiJwh5suBOoE3ckZu4qmE@ap-south.connect.psdb.cloud/naruto?charset=utf8mb4"
+dbcon_string="mysql+pymysql://f53kyprh80cy94wz1yzk:pscale_pw_sA9tHObqnUERYrf8pu1hP4BYY333qcOypJmfY939I17@aws.connect.psdb.cloud/naruto?charset=utf8mb4"
 
 #creating a database engine
 engine = create_engine(dbcon_string,connect_args={
