@@ -1,8 +1,8 @@
-
+import os
 from sqlalchemy import create_engine, text      
 
 #dbcon_string contains the connection string to the database, including the necessary authentication credentials to connect to the database. 
-dbcon_string="mysql+pymysql://gsnfb3z6md0dxf73x65f:pscale_pw_Far1J9NDC9taJvLDex6JZ20BbYm2jNpNaMEdsWCJYzW@aws.connect.psdb.cloud/naruto?charset=utf8mb4"
+dbcon_string=os.environ['db_con_str']
 
 #creating a database engine
 engine = create_engine(dbcon_string,connect_args={
